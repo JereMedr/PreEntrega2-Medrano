@@ -6,60 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon - Home</title>
+    <link rel="stylesheet" href="./styles/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
-    <header>
-        <div>
+    <div class="container-fluid">
+        <header>
             <div>
-                <a href="./index.html">
-                    <img src="./assets/img/pokeball-logo.png" alt="logo" class="header__logo">
-                    Pokemon
+                <div>
+                    <a href="./index.html">
+                        <img src="./assets/img/pokeball-logo.png" alt="logo" class="header__logo">
+                        Pokemon
+                    </a>
+                </div>
+            </div>
+            <nav class="header__navegador">
+                <div>
+                    <a href="./index.html" class="header__navegador__link">HOME</a>
+                    <a href="./about-us.html" class="header__navegador__link">ABOUT US</a>
+                    <a href="./join-us.html" class="header__navegador__link">JOIN US</a>
+                    <a href="./multimedia.html" class="header__navegador__link">MULTIMEDIA</a>
+                    <a href="./pokedex.html" class="header__navegador__link">POKEDEX</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="main__container">
+                <section>
+                    <article>
+                        <div class="main__container--banner">
+                            <img class="main__container--banner" src="./assets/img/pokeball-banner.jpg"
+                                alt="pokeballs banner">
+                        </div>
+                        <div class="main__container--title">
+                            <h1>Bienvenido a Pokemon</h1>
+                            <h2>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quisquam, quidem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Eos minima reiciendis nisi dolores sequi ipsa incidunt ea quisquam
+                                cumque nam porro, sapiente provident nobis, praesentium libero nihil
+                                expedita maiores iste.
+                            </h2>
+                        </div>
+                    </article>
+                </section>
+
+
+                <a href="./about-us.html">
+                    <button class="button__foot">ABOUT US</button>
                 </a>
             </div>
-        </div>
-        <nav class="header__navegador">
-            <div>
-                <a href="./index.html" class="header__navegador__link">HOME</a>
-                <a href="./about-us.html" class="header__navegador__link">ABOUT US</a>
-                <a href="./join-us.html" class="header__navegador__link">JOIN US</a>
-                <a href="./multimedia.html" class="header__navegador__link">MULTIMEDIA</a>
-                <a href="./pokedex.html" class="header__navegador__link">POKEDEX</a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="main__container">
-            <section>
-                <article>
-                    <div class="main__container--banner">
-                        <img class="main__container--banner" src="./assets/img/pokeball-banner.jpg"
-                            alt="pokeballs banner">
-                    </div>
-                    <div class="main__container--title">
-                        <h1>Bienvenido a Pokemon</h1>
-                        <h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quisquam, quidem. Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Eos minima reiciendis nisi dolores sequi ipsa incidunt ea quisquam
-                            cumque nam porro, sapiente provident nobis, praesentium libero nihil
-                            expedita maiores iste.
-                        </h2>
-                    </div>
-                </article>
-            </section>
-        </div>
-
-        <a href="./about-us.html">
-            <button class="button__foot">ABOUT US</button>
-        </a>
-    </main>
-    <hr>
-    <footer>
-        esto es un footer
-    </footer>
+        </main>
+        <hr>
+    </div>
+    <link rel="stylesheet" href="./styles/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js">
 </body>
+
+<footer>
+    esto es un footer
+</footer>
+
 <a href="">facebook</a>
 <a href="">Linkedin</a>
 <a href="">youtube</a>
