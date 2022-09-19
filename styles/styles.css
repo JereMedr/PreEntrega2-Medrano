@@ -1,32 +1,35 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: 0;
 }
 
 
-.header__logo{
+.header__logo {
     display: inline-block;
     width: 80px;
     height: 80px;
 }
-.header__navegador{
-    display: inline; 
+
+.header__navegador {
+    display: inline;
 }
 
-.header__navegador__link{
-    color:red;
+.header__navegador__link {
+    color: red;
     font-size: 25px;
-    margin: 5%;
+    text-decoration: none;
+    padding: 10px;
 }
 
-h1{
+h1 {
     font-size: 70px;
     font-weight: bold;
     color: rgb(17, 16, 16);
     padding: 0.5rem;
 }
-.main__container{
+
+.main__container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -36,14 +39,14 @@ h1{
     padding: 5%;
 }
 
-.main__container--title{
+.main__container--title {
     width: 70%;
     height: 100px;
     justify-content: center;
     align-items: center;
 }
 
-.main__container--banner{
+.main__container--banner {
     background-color: aqua;
     width: 80%;
     height: 60vh;
@@ -52,7 +55,7 @@ h1{
     margin: 5%;
 }
 
-.main__container--video{
+.main__container--video {
     background-color: rgb(198, 13, 223);
     width: 80%;
     height: 60vh;
@@ -61,7 +64,7 @@ h1{
     margin: 5%;
 }
 
-.main__container--music{
+.main__container--music {
     background-color: rgb(11, 130, 15);
     width: 80vw;
     height: 60vh;
@@ -70,36 +73,94 @@ h1{
     margin: 5%;
 }
 
-.main__container--image{
+.main__container--image {
     width: 50%;
     height: 100%;
     justify-content: center;
     align-items: center;
 }
 
-.button__foot{
+.button__foot {
     width: 30%;
     height: 20%;
 }
 
-.article__box{
+.article__box {
     background-color: darksalmon;
     width: 80%;
     height: 60vh;
 
 }
 
-.pokedex__box{
+.pokedex__box {
     background-color: rgb(238, 11, 8);
     width: 100vw;
     height: 100vh;
 }
 
-.pokedex__box--card{
+.pokedex__box--card {
     width: 50%;
     height: 50%;
     margin: 5%;
     padding: auto;
     background-color: aliceblue;
 
+}
+
+.fade-in-image {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
