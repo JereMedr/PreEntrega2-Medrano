@@ -6,29 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon - Join us</title>
+    <link rel="stylesheet" href="./styles/bootstrap-5.2.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- import icons -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div>
-            <div>
-                <a href="./index.html">
-                    <img src="./assets/img/pokeball-logo.png" alt="logo" class="header__logo">
-                    Pokemon
-                </a>
+    <div class="header__flex">
+        <header>
+            <div class="nav__flex">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about-us.html">About-us</a></li>
+                        <li><a href="./join-us.html">Join us</a></li>
+                        <li><a href="./multimedia.html">Multimedia</a></li>
+                        <li><a href="./pokedex.html">Pokedex</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-        <nav class="header__navegador">
-            <div>
-                <a href="./index.html" class="header__navegador__link">HOME</a>
-                <a href="./about-us.html" class="header__navegador__link">ABOUT US</a>
-                <a href="./join-us.html" class="header__navegador__link">JOIN-US</a>
-                <a href="./multimedia.html" class="header__navegador__link">MULTIMEDIA</a>
-                <a href="./pokedex.html" class="header__navegador__link">POKEDEX</a>
-            </div>
-        </nav>
-    </header>
+        </header>
+    </div>
     <main>
         <div class="main__container">
             <section>
@@ -52,13 +51,25 @@
             </section>
         </div>
     </main>
-    <hr>
     <footer>
-        esto es un footer
+        <div class="flex__footer">
+            <!-- social media icons -->
+            <div class="flex__footer--item">
+                <a href="https://www.facebook.com/pokemon" target="_blank"> <i
+                        class="icon-facebook-sign icon-4x"></i></a>
+                <a href="https://twitter.com/pokemon" target="_blank"><i class="icon-twitter-sign icon-4x"></i></a>
+                <!-- <img src="./assets/img/pokeball-logo.png" alt="pokemon company home button" width="70" height="70"> -->
+                <a href="https://www.instagram.com/pokemon/" target="_blank"> <i class="icon-instagram icon-4x"></i>
+                </a>
+                <a href="https://www.youtube.com/pokemon" target="_blank"><i class="icon-youtube-sign icon-4x"></i></a>
+            </div>
+            <p>Esta sitio web es un proyecto de la carrera de desarrollo web de coderhouse 2022 y un tributo a mi
+                franquicia favorita de mi infancia</p>
+            <p>Solo soy un desarrollador backend tratando de centrar un div</p>
+        </div>
     </footer>
+    <link rel="stylesheet" href="./styles/bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js">
 </body>
-<a href="">facebook</a>
-<a href="">Linkedin</a>
-<a href="">youtube</a>
+
 
 </html>

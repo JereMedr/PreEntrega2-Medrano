@@ -31,7 +31,7 @@ h1 {
 /* principio estilizado header */
 .header__flex {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.845);
 }
 .nav__flex {
@@ -51,7 +51,7 @@ h1 {
     }
 }
 .nav__flex ul li a {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: larger;
     font-weight: bold;
 }
