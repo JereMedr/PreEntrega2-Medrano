@@ -100,7 +100,7 @@ h1 {
 
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1200px) {
     .main__image-form{
         display: flex;
         flex-direction: column;
@@ -108,12 +108,12 @@ h1 {
         width: auto;
     }
 }
-
+/*inicio estilizacion formulario join-us.html */
 .image__container{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: auto;
     padding: 1rem;
 }
 @media
@@ -124,6 +124,12 @@ screen and (max-width: 920px) {
         align-items: center;
         width: auto;
         padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .image__container{
+        display: none
     }
 }
 
@@ -180,6 +186,8 @@ form{
     border: 1px solid black;
     border-radius: 5px;
 }
+/*fin estilizacion formulario join-us.html */
+
 
 /* start: footer styles using flexbox and styling the footer links */
 .flex__footer {
