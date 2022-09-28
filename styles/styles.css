@@ -37,6 +37,11 @@ h1 {
 .nav__flex {
     width: 100vh;
 }
+@media (max-width: 768px) {
+    .nav__flex {
+        width: auto;
+    }
+}
 .nav__flex ul {
     display: flex;
     justify-content: space-evenly;
@@ -82,18 +87,100 @@ h1 {
     text-align: center;
 }
 
+.flex__main h2{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main__image-form{
+    display: flex;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 920px) {
+    .main__image-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+}
+
 .image__container{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
     padding: 1rem;
 }
-@media screen and (max-width: 1100px) {
+@media
+screen and (max-width: 920px) {
     .image__container{
-        display: none
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        padding: 1rem;
     }
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 1rem;
+}
+
+.flex__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 1rem;
+    margin: 25%;
+}
+@media screen and (max-width: 920px) {
+    .flex__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        padding: 1rem;
+    }
+}
+
+.flex__form label{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+}
+
+.flex__form input{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.flex__form textarea{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 /* start: footer styles using flexbox and styling the footer links */
 .flex__footer {
     display: flex;
