@@ -4,57 +4,96 @@
     box-sizing: 0;
 }
 
-.header__logo {
-    display: inline-block;
-    width: 80px;
-    height: 80px;
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: normal;
+    justify-content: center;
+    width: 100%;
 }
 
-.header__navegador {
-    display: inline;
-}
-
-.header__navegador__link {
-    color: red;
-    font-size: 25px;
+a {
+    padding: 5%;
     text-decoration: none;
-    padding: 10px;
+
+}
+
+br {
+    color: gray;
 }
 
 h1 {
-    font-size: 70px;
     font-weight: bold;
     color: rgb(17, 16, 16);
     padding: 0.5rem;
 }
-
-.article__box {
-    background-color: darksalmon;
-    width: 80%;
-    height: 60vh;
-
+/* principio estilizado header */
+.header__flex {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.845);
 }
 
-.pokedex__box {
-    background-color: rgb(238, 11, 8);
-    width: 100vw;
-    height: 100vh;
+
+.nav__flex {
+    width: 100vh;
 }
 
-.pokedex__box--card {
-    width: 50%;
-    height: 50%;
-    margin: 5%;
-    padding: auto;
-    background-color: aliceblue;
 
+.nav__flex ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0.8rem;
 }
+
+@media screen and (max-width: 720px) {
+    .nav__flex ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+.nav__flex ul li a {
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+@media screen and (max-width: 720px) {
+    .nav__flex ul li a {
+        color: white;
+        font-size: larger;
+        font-weight: bold;
+        padding: 0.5rem;
+    }
+    
+}
+
+/* fin estilizado header */
+.flex__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.flex__main h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+}
+
 /* start: footer styles using flexbox and styling the footer links */
 .flex__footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    text-align: center;
     justify-content: space-evenly;
     background-color: rgb(0, 0, 0);
     color: white;
@@ -63,71 +102,13 @@ h1 {
 
 .flex__footer--item {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-around;
     width: 50%;
+    margin: 1%;
 }
 
-i{
+i {
     color: aliceblue;
 }
 /*end: footer styles using flexbox and styling the footer links */
-
-
-.fade-in-image {
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-ms-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
